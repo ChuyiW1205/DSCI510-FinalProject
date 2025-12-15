@@ -1,0 +1,10 @@
+{
+  "missing_columns_count": 0,
+  "total_columns": 30,
+  "missing_data_details": [],
+  "overall_missing_stats": {
+    "total_cells": 1500,
+    "total_missing_cells": 0,
+    "overall_missing_percentage": 0.0
+  }
+}
