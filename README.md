@@ -16,37 +16,25 @@ This project focuses on collecting and analyzing movie rating data from Metacrit
 
 ## Project Structure
 
-WebScrape Insights/
+DSCI510-FinalProject/
+├── src/
+│   ├── get_data.py
+│   ├── clean_data.py
+│   ├── run_analysis.py
+│   └── visualize_results.py
+├── data/
+│   ├── raw/
+│   │   └── movie_html.zip
+│   └── processed/
+│       ├── movies.json
+│       └── movies_cleaned.csv
+├── results/
+│   ├── final_report.pdf
+│   └── *.png
 ├── README.md
 ├── requirements.txt
-├── data/
-│ ├── processed/
-│ │ └── movies_cleaned.csv
-│ └── raw/
-│ └── raw HTML files
-├── project_proposal.pdf
-├── results/
-│ ├── analysis_results.json
-│ ├── final_report.pdf
-│ ├── score_distribution.png
-│ ├── genre_distribution.png
-│ ├── company_distribution.png
-│ ├── year_distribution.png
-│ ├── correlation_heatmap.png
-│ ├── score_consistency.png
-│ ├── outlier_analysis.png
-│ ├── genre_patterns.png
-│ ├── studio_patterns.png
-│ └── temporal_trends.png
-└── src/
-├── get_data.py
-├── clean_data.py
-├── run_analysis.py
-├── visualize_results.py
-├── check_missing_data.py
-├── config.py
-└── utils/
-└── Webpage_parsing.py
+└── project_proposal.pdf
+
 
 
 ---
@@ -55,9 +43,18 @@ WebScrape Insights/
 
 It is recommended to create a virtual environment before running this project to avoid dependency conflicts.
 
+## Notes on Raw Data
+
+Due to GitHub file upload limitations, the raw HTML files scraped from Metacritic are stored  
+as a compressed archive in `data/raw/movie_html.zip`.
+
+The raw data is preserved for reference and reproducibility purposes.  
+The analysis and visualization scripts do not require the raw HTML files to be manually extracted,  
+as all subsequent processing is performed on the cleaned datasets stored in `data/processed/`.
+
+
 ### Using Conda
 
-```bash
 conda create -n webscrape_env python=3.9
 conda activate webscrape_env
 
@@ -161,3 +158,5 @@ Running the scripts in the above order will reproduce all results used in the fi
 
 For detailed project background, methodology, and conclusions, please refer to
 `project_proposal.pdf` and `results/final_report.pdf`.
+
+
