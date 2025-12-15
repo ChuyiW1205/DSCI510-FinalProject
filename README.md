@@ -29,11 +29,12 @@ DSCI510-FinalProject/
 │       ├── movies.json
 │       └── movies_cleaned.csv
 ├── results/
-│   ├── final_report.pdf
 │   └── *.png
 ├── README.md
 ├── requirements.txt
-└── project_proposal.pdf
+├── project_proposal.pdf
+├── reply to the proposal question.md
+└──  final_report.pdf
 
 
 
